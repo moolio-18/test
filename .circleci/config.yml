@@ -14,10 +14,6 @@ jobs:
       - ansible-playbook/playbook:
           playbook: ansible/playbook.yml
           playbook-options: -i ansible/inventory
-#      - run:
-#          name: ssh
-#          command: |
-#            scp -oStrictHostKeyChecking=no
 workflows:
   version: 2
   ansibledeploy:
