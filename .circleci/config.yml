@@ -13,7 +13,10 @@ jobs:
           version: 2.10.7
       - ansible-playbook/playbook:
           playbook: ansible/playbook.yml
-#          private-key: <<parameters.private-key>>
+          playbook-options: -i ansible/inventory
+          
+
+
 
 workflows:
   version: 2
