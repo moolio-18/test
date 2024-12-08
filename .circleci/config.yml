@@ -13,7 +13,7 @@ jobs:
           version: 2.10.7
       - ansible-playbook/playbook:
           playbook: ansible/playbook.yml
-          playbook-options: -i ansible/inventory
+          playbook-options: -u ec2-user -i ansible/inventory --private-key ~/.ssh/id_rsa
 workflows:
   version: 2
   ansibledeploy:
